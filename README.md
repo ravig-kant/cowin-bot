@@ -1,7 +1,7 @@
 # cowin-bot app
 Provides a messenger to send notification about covid vaccine availablity in a particular district
 
-# Gather setup data
+# Setup
 Create a telegram bot and a group to send messages. Find their identifiers to configure the application.
 * Register a bot with telegram
   * Go to Telegram app
