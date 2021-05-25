@@ -20,7 +20,7 @@ Create a telegram bot and a group to send messages. Find their identifiers to co
 Find out the infromation of district from cowin APIs.
 * Find out the district id
   * Find the state id by calling https://cdn-api.co-vin.in/api/v2/admin/location/states
-  * Use the state id to find district by calling API https://cdn-api.co-vin.in/api/v2/admin/location/districts/{state id}
+  * Use the state id to find district by calling API https://cdn-api.co-vin.in/api/v2/admin/location/districts/{state-id}
   
 #Configure Application
 * Create a property file as per src/resources/samples.properties
