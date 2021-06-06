@@ -59,7 +59,7 @@ public class Appointment {
         StringBuilder builder = new StringBuilder("Appointment available at ")
                                     .append(name)
                                     .append(" for age ")
-                                    .append( minAge != 45 ? "18 to 44 " : " 45 and above ")
+                                    .append( minAge != 45 ? "18 to 44 " : "45 and above ")
                                     .append("on ")
                                     .append(date)
                                     .append(". ")

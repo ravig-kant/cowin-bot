@@ -45,7 +45,7 @@ final class Worker implements Runnable{
     }
 
     private void sendNotification(Appointment appointment){
-        String correlationId = appointment.getName();
+        String correlationId = appointment.getName() + appointment.getDate();
         String message = appointment.message();
         Notification.send(correlationId, message);
     }

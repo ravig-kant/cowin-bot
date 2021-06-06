@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>my.sirsa</groupId>
+    <groupId>telegrambot</groupId>
     <artifactId>telegrambot</artifactId>
-    <version>1.0</version>
+    <version>2.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -92,11 +92,6 @@
             <artifactId>httpclient</artifactId>
             <version>4.5.1</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.github.pengrad</groupId>-->
-<!--            <artifactId>java-telegram-bot-api</artifactId>-->
-<!--            <version>5.1.0</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
             <artifactId>jersey-common</artifactId>
@@ -122,11 +117,6 @@
             <artifactId>jaxb-runtime</artifactId>
             <version>2.3.3</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.glassfish.jersey.core</groupId>-->
-<!--            <artifactId></artifactId>-->
-<!--            <version>2.29</version>-->
-<!--        </dependency>-->
     </dependencies>
 
 

@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 @JsonIgnoreProperties({"long",
         "state_name", "name_l", "state_name_l", "district_name", "district_name_l", "block_name",
-        "block_name_l", "pindcode", "lat", "pincode"})
+        "block_name_l", "pindcode", "lat", "pincode", "vaccine_fees"})
 public class Center {
 
     public String center_id;
@@ -23,7 +23,7 @@ public class Center {
         StringBuilder sb = new StringBuilder();
         sb.append("Slots available at " + name);
 
-        final String availableSessions =
+        String availableSessions =
                 Arrays.stream(sessions)
                         .filter(x -> x.available_capacity > 0)
                         .map(y -> new StringBuilder().append(" on " + y.date)
@@ -35,6 +35,9 @@ public class Center {
                                                      .toString())
                         .collect(Collectors.joining("\n"));
 
+        if(availableSessions.length() == 0){
+            availableSessions = " : 0";
+        }
         return sb.append(availableSessions).toString();
     }
 
